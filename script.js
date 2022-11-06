@@ -25,3 +25,22 @@ async function buscaEndereco(cep) {
 
 var cep = document.getElementById('cep');
 cep.addEventListener("focusout", () => buscaEndereco(cep.value));
+
+
+
+
+// SEM ASYNC & AWAIT
+
+//CALLBACK HELL
+// var consultaCEP = fetch('https://viacep.com.br/ws/62370-000/json/')
+//     .then(response => response.json())
+//     .then(r => {
+//         if(r.erro){
+//             throw Error('Esse CEP não existe!'); 
+//         }else{
+//             console.table(r)
+//         }
+//     }) 
+//     .catch(erro => console.log(erro))
+//     .finally(mensagem => console.log('Processamento Concluído!'))
+// console.log(consultaCEP.erro)
